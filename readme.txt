@@ -42,4 +42,4 @@ This is a simple  plugin with only few page codes. You can easily edit the codes
 
 **Where can I contact in case of problem?**
 
-You can email me at @itmeskm99@gmail.com
+You can email me at @itsmeskm99@gmail.com

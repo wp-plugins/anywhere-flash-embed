@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name:  Anywhere Flash Embed
-Plugin URI: http://wpb2d.com
+Plugin URI: http://www.skmukhiya.com.np
 Description: Helps to embed flash to post, page, sidebar anywhere to make your site lively. For details please email, itsmeskm99@gmail.com
 Version: 1.0
 Author: Suresh KUMAR Mukhiya

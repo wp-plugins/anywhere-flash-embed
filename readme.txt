@@ -1,6 +1,6 @@
 === Anywhere Flash Embed ===
 Contributors: sureshhardiya 
-Tags: embed flash anywhere
+Tags: embed flash anywhere, flash, embedding flash, Donate link:http://study-for-exam.blogspot.com/p/donate-page.html 
 Requires at least: 3.2
 Tested up to: 3.9
 Stable tag: flash embed shortcodes

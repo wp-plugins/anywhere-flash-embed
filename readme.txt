@@ -2,7 +2,7 @@
 Contributors: sureshhardiya 
 Tags: embed flash anywhere, flash, embedding flash, Donate link:http://study-for-exam.blogspot.com/p/donate-page.html 
 Requires at least: 3.2
-Tested up to: 4.0
+Tested up to: 4.2
 Stable tag: flash embed shortcodes
 
 It is any a plugin that allows to add flash easily with SWFObj using [SWF] shortcode.
@@ -13,10 +13,10 @@ It is any a plugin that allows to add flash easily with SWFObj using [SWF] short
 
 To embed flash anywhere in page or post just post in editor something in the following format.   
   
-[swf src=\"http://www.example.com/my-flash-file.swf\" width=600 height=300]  
+[swf src=\"http:/:/www.example.com/my-flash-file.swf\" width=600 height=300]  
   
 The attributes \*src\*, \*width\* and \*height\* are \*\*required\*\*  
-  
+ 
 Additional attributes includes:  
   
 * \*params\*  

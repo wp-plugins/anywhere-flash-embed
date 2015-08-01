@@ -1,13 +1,20 @@
 <?php
 /*
 Plugin Name:  Anywhere Flash Embed
-Plugin URI: http://www.skmukhiya.com.np
-Description: Helps to embed flash to post, page, sidebar anywhere to make your site lively. For details please email, itsmeskm99@gmail.com
-Version: 1.0.1
+Plugin URI: http://www.skmukhiya.com.np/anywhere-flash-embed/
+Description: Helps to embed flash to post, page, sidebar anywhere to make your site lively. Easy shortcode Generator Added to Powerup. For details please email, itsmeskm99@gmail.com
+Version: 1.0.4
 Author: Suresh KUMAR Mukhiya
 Author URI: https://www.upwork.com/users/~0182e0779315e50896
 Tags: Flash Embed, Flash file, Embed Flash to Post
 */
+
+
+if (realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
+	exit('Please don\'t access this file directly.');
+}
+
+require_once ( 'lib/init.php' );
 
 //hooks to load the plugin
 add_action("plugins_loaded", "afe_setup_globals", 1);
@@ -55,32 +62,7 @@ function afe_setup_globals($atts){
 if(!function_exists("afe_help_page_layout")){
 	function afe_help_page_layout()
 	{
-		?>
-		<div class="postbox">
-							
-								<h3><span>Anywhere Flash Embed Help page</span></h3>
-								<div class="inside">
-									<ul>
-										<li>
-											Upload the anywhere-flash-embed page to plugin directory.
-										</li>
-										<li>Go to plugin dashboard and click on activate.</li>
-										<li>To embed flash anywhere in page or post just post in editor something in the following format.   
-  
-<code>[swf src=\"http://www.example.com/my-flash-file.swf\" width=300 height=100]</code> </li>
-									</ul>
-								</div> <!-- .inside -->
-							
-							</div>
-		<?php
-	}
-}
-
-if(!function_exists('afe_control_options'))
-{
-	function afe_control_options()
-	{
-		echo "hellp";
+		require_once('help-general.php');
 	}
 }
 

@@ -8,32 +8,6 @@
 			return n ?  window.decodeURIComponent(n[1]) : '';
 		};
 
-		function html( cls, data ,con) {
-			var placeholder = url + '/img/' + getAttr(data,'type') + '.jpg';
-			data = window.encodeURIComponent( data );
-			content = window.encodeURIComponent( con );
-
-			return '<img src="' + placeholder + '" class="mceItem ' + cls + '" ' + 'data-sh-attr="' + data + '" data-sh-content="'+ con+'" data-mce-resize="false" data-mce-placeholder="1" />';
-		}
-
-		function replaceShortcodes( content ) {
-			return content.replace( /\[swf([^\]]*)\]([^\]]*)\[\/swf\]/g, function( all,attr,con) {
-				return html( 'wp-swf', attr , con);
-			});
-		}
-
-		function restoreShortcodes( content ) {
-			return content.replace( /(?:<p(?: [^>]+)?>)*(<img [^>]+>)(?:<\/p>)*/g, function( match, image ) {
-				var data = getAttr( image, 'data-sh-attr' );
-				var con = getAttr( image, 'data-sh-content' );
-
-				if ( data ) {
-					return '<p>[' + sh_tag + data + ']' + con + '[/'+sh_tag+']</p>';
-				}
-				return match;
-			});
-		}
-
 		//add popup
 		editor.addCommand('swf_popup', function(ui, v) {
 			//setup defaults
@@ -158,15 +132,6 @@
 			}
 		});
 
-		// //replace from shortcode to an image placeholder
-		// editor.on('BeforeSetcontent', function(event){ 
-		// 	event.content = replaceShortcodes( event.content );
-		// });
-
-		// //replace from image placeholder to shortcode
-		// editor.on('GetContent', function(event){
-		// 	event.content = restoreShortcodes(event.content);
-		// });
 
 		//open popup on placeholder double click
 		editor.on('DblClick',function(e) {

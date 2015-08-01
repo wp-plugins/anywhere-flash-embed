@@ -24,6 +24,13 @@ add_action("admin_menu", "afe_setup_globals", 1);
 
 add_action("admin_menu","afe_help_page");
 
+add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'my_plugin_action_links' );
+
+function my_plugin_action_links( $links ) {
+   $links[] = '<a href="'. esc_url( get_admin_url(null, 'options-general.php?page=afe_help_page') ) .'">Instructions</a>';
+   return $links;
+}
+
 if(!function_exists("afe_help_page")){
 	function afe_help_page()
 	{

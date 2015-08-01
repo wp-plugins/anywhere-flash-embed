@@ -19,7 +19,7 @@
 				<h4>General Settings</h4>
 				<ul>
 				<li><textarea type="text" name="shortcode-1" id="shortcode-1">[swf src="http://www.example.com/swf/banner.swf" width="600" height="400" ]</textarea></li>
-				<li><textarea type="text" name="shortcode-1" id="shortcode-1">[swf src="http://www.example.com/swf/banner.swf" width="600" height="400" params="wpmode=direc&amp;movie="file.swf"]Please Install Flash To support this image.[/swf]</textarea></li>
+				<li><textarea type="text" name="shortcode-1" id="shortcode-1">[swf src="http://www.example.com/swf/banner.swf" width="600" height="400" params="wpmode=direct&amp;movie="file.swf"]Please Install Flash To support this image.[/swf]</textarea></li>
 				<li><textarea type="text" name="shortcode-1" id="shortcode-1">[swf src="http://www.example.com/swf/banner.swf" width="600" height="400" flashvars=""myVariable=Hello%20World&amp;mySecondVariable=Goodbye"]Please Install Flash To support this image.[/swf]</textarea></li>
 				</ul>
 			</div>
@@ -27,3 +27,4 @@
 		</div>
 	</div>
 </div>
+<!-- OOP NEXT VER-->
